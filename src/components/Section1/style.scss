@@ -1,0 +1,90 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h1{
+            font-size: 70px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 4rem;
+            // padding: 20px;
+
+            span{
+                font-weight: 700;
+                color: #E11F1C;
+            }
+        }
+
+        p{
+            font-size: 30px;
+            margin-top: 10px;
+            // padding: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+        .btn-getstarted{
+            width: 170px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 300;
+            background-color: #E11F1C;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            margin-top: 20px;
+        }
+    }
+    .carosal{
+        width: 70%;
+        height: 102px;
+        justify-self: flex-end;
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+
+        .cards{
+            width: 270px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 48px;
+                height: 48px;
+                margin-right: 5px;
+            }
+            .card-content{
+                p{
+                    font-size: 16px;   
+                    font-weight: 300;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .cards-space{
+                display: flex;
+                .price{
+                    font-size: 18px;
+                    font-weight: 700px;
+                }
+            }
+        }
+
+    }
+}
