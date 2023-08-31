@@ -3,16 +3,31 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './section8.scss'
+import { HiOutlineArrowNarrowRight, HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 
 function Section8() {
 
+    const PrevArrow = ({ onClick }) => (
+        <button className="sec8-arrow sec-8prev" onClick={onClick}>
+          <HiOutlineArrowNarrowLeft fontSize={100} fontWeight={300}/>
+        </button>
+      );
+    
+      const NextArrow = ({ onClick }) => (
+        <button className="sec8-arrow sec-8next" onClick={onClick}>
+          <HiOutlineArrowNarrowRight  fontSize={100}/>
+        </button>
+      );
+
     var settings = {
-        dots: true,
-        infinite: false,
+        dots: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         responsive: [
           {
             breakpoint: 1024,
@@ -20,7 +35,7 @@ function Section8() {
               slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
+              dots: false
             }
           },
           {
@@ -51,7 +66,7 @@ function Section8() {
 
         <div className='slider'>
             <Slider {...settings}>
-                <div className='slider-container'>
+                <div className='sec8-slider'>
                     <div className="slider-image">
                         <img src="/images/Rectangle 215.png " alt="slider image" />
                     </div>
@@ -61,26 +76,55 @@ function Section8() {
                         <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
                     </div>
                 </div>
-                <div>
-                    <h3>2</h3>
+                <div className='sec8-slider slider-container'>
+                    <div className="slider-image">
+                        <img src="/images/Rectangle 215.png " alt="slider image" />
+                    </div>
+                    <div className="slider-content">
+                        <div className="icon"></div>
+                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>3</h3>
+                <div className='sec8-slider slider-container'>
+                    <div className="slider-image">
+                        <img src="/images/Rectangle 215.png " alt="slider image" />
+                    </div>
+                    <div className="slider-content">
+                        <div className="icon"></div>
+                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>4</h3>
+                <div className='sec8-slider slider-container'>
+                    <div className="slider-image">
+                        <img src="/images/Rectangle 215.png " alt="slider image" />
+                    </div>
+                    <div className="slider-content">
+                        <div className="icon"></div>
+                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>5</h3>
+                <div className='sec8-slider slider-container'>
+                    <div className="slider-image">
+                        <img src="/images/Rectangle 215.png " alt="slider image" />
+                    </div>
+                    <div className="slider-content">
+                        <div className="icon"></div>
+                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>6</h3>
-                </div>
-                <div>
-                    <h3>7</h3>
-                </div>
-                <div>
-                    <h3>8</h3>
+                <div className='sec8-slider slider-container'>
+                    <div className="slider-image">
+                        <img src="/images/Rectangle 215.png " alt="slider image" />
+                    </div>
+                    <div className="slider-content">
+                        <div className="icon"></div>
+                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                    </div>
                 </div>
             </Slider>
         </div>

@@ -1,0 +1,93 @@
+.section11{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 80vh !important;
+
+    .sec11-left{
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-family: Poppins;
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            span{
+                color: #E11F1C;
+            }
+
+        }
+
+        p{
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 270px;
+
+        }
+    }
+    .sec11-right{
+        min-width: 600px;
+        // border: 2px solid red;
+
+        .sec11-form{
+            padding: 20px;
+            box-shadow: 7px 7px 15px 0px #00000040;
+            text-align: center;
+            border-radius: 20px;
+
+            .sec11-form-align{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20PX;
+                
+                .input{
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #A7A6A6;
+
+                    input{
+                        width: 50%;
+                        width: 250px;
+                        height: 45px;
+                        border-radius: 10px;
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+
+                    textarea{
+                        width: 600px;
+                        height: 100px;
+                        border-radius: 10px;
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            button{
+                width: 171px;
+                height: 57px;
+                border-radius: 15px;
+                border: none;
+                background-color: #E11F1C;
+                color: white;
+                &:hover{
+                    scale: 1.05;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

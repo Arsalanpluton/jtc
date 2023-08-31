@@ -1,0 +1,54 @@
+.section10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    margin-bottom: 30px;
+
+    h2{
+        max-width: 680px;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    .sec10-container{
+        display: flex;
+        justify-content: center;
+        max-width: 890px;
+        width: 80%;
+        margin-top: 10px;
+        .sec10-list{
+            border: 3px solid black;
+            border-radius: 22px;
+            padding: 0px;
+            width: 100%;
+            
+            .sec10-title{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px;
+                
+                border-radius: 20px;
+                margin: 0px;
+                width: 100%;
+                .sec10-icon{
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: red;
+                }
+            }
+            .sec10-title-b{
+                border: 3px solid black;
+            }
+            .sec10-para{
+                padding: 20px;
+            }
+        }
+    }
+}
