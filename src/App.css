@@ -10,3 +10,35 @@
   width: 100%;
   height: 100vh;
 }
+
+.horizontal-scroll-area{
+  width: 100vw;
+  height: 100vh;
+}
+.horizontal-scroll-area .horizontal-scroll-child{
+width: 100vw;
+height: 100vh;
+}
+.horizontal-scroll-area .horizontal-scroll-child:nth-child(1){
+background-color: red;
+}
+.horizontal-scroll-area .horizontal-scroll-child:nth-child(2){
+background-color: blue;
+}
+.horizontal-scroll-area .horizontal-scroll-child:nth-child(3){
+background-color: green;
+}
+
+
+.mySwiper{
+  width: 100%;
+  height: 100%;
+}
+.mySwiper div{
+  width: 100%;
+  height: 100%;
+}
+.mySwiper div img{
+  width: 100%;
+  height: 100%;
+}
