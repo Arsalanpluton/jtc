@@ -14,33 +14,33 @@ function Section9() {
 
     var settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 3,
+        initialSlide: 0,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 1,
-              infinite: true,
+              infinite: false,
               dots: false
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1,
               slidesToScroll: 1,
-              initialSlide: 3
+              initialSlide: 1
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           }
@@ -51,7 +51,7 @@ function Section9() {
     <div className='section section9'>
         <h2><span>JAVA TIMES</span> Blog</h2>
         <div className="blogs-container">
-        <Slider {...settings}>
+        {/* <Slider {...settings}> */}
             <Card sx={{ maxWidth: 345 }} className='sec9-blog-card'>
                 <CardActionArea className='sec9-card-area'>
                     <CardMedia
@@ -152,7 +152,7 @@ function Section9() {
                 </CardActions>
             </Card>
             
-        </Slider>
+        {/* </Slider> */}
         </div>
 
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
-import imageUrl from "./imageUrl";
+// import imageUrl from "./imageUrl";
 
 const StatBox = ({ order, icon, number, label }) => {
   return (
@@ -16,7 +16,7 @@ const StatBox = ({ order, icon, number, label }) => {
             <p className="stat-label">{label}</p>
           </div>
           <div className="stat-icon">
-            <img src={imageUrl(icon)} alt="" />
+            <img src='/images/flexibility.png' alt="" />
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ function Section8() {
 
     var settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -34,7 +34,7 @@ function Section8() {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              infinite: true,
+              infinite: false,
               dots: false
             }
           },

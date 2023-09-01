@@ -14,7 +14,7 @@ function Section3() {
                 <button>contact us</button>
             </div>
             <div className='sec3-right'>
-            <iframe width="450" height="300" src="https://www.youtube.com/embed/vIsHv6nTTSU?si=zH3faoEftUSrL0Kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe className='sec3-video' width="600" height="350" src="https://www.youtube.com/embed/vIsHv6nTTSU?si=zH3faoEftUSrL0Kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         

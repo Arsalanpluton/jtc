@@ -9,4 +9,26 @@
 .section{
   width: 100%;
   min-height: 100vh;
+  /* padding: 30px; */
+  /* overflow: hidden; */
+
 }
+
+/* button:hover{
+  cursor: pointer;
+  scale: 1.05;
+} */
+
+.stat-number{
+  color: white;
+}
+
+.stat-label{
+  color: white;
+}
+
+.stat-box-header{
+  display: flex;
+  gap: 5px;
+}
+

@@ -1,162 +1,61 @@
 import React, { useState } from 'react'
 import './navbar.scss'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-
-
-const pages = ['Home', 'About us', 'Learn', 'Client'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 function Navbar() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+  const [menuOpen, setMenuOpen] = useState(true)
 
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl" className='nav'>
-        <Toolbar disableGutters>
+    <>
+    <nav>
         <div className='logo'>
             <img src="/images/Frame.png" alt="jtc-logo" />
         </div>
+        <div className='menu'>
+            <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Learn</a>
+                </li>
+                <li>
+                  <a href="#">Clients</a>
+                </li>
+          
+            </ul>
+            <div className='signup'>
+                <p className='signup-hidden'>SIGNUP</p>
+            </div>
+        </div>
+        {menuOpen ? <AiOutlineMenu className="menu-icon" onClick={()=> setMenuOpen(false)}/> : <AiOutlineClose className="menu-icon"  onClick={()=> setMenuOpen(true)}/>}
+    </nav>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
+    <div className={`nav-down-menu ${menuOpen ? 'display-hidden' : ""}`}>
+      <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Learn</a>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">SignUp</a>
+          </li>
+      </ul>
+    </div>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-            <Typography>SIGNUP</Typography>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              <Typography>SIGNUP</Typography>
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
-    // <nav>
-    //     <div className='logo'>
-    //         <img src="/images/Frame.png" alt="jtc-logo" />
-    //     </div>
-    //     <div className='menu'>
-    //         <ul>
-    //             <li>
-    //                 <a href="#">Home</a>
-    //                 <a href="#">About us</a>
-    //                 <a href="#">Learn</a>
-    //                 <a href="#">Clients</a>
-    //             </li>
-    //         </ul>
-    //         <div className='signup'>
-    //             <p>SIGNUP</p>
-    //         </div>
-    //     </div>
-    // </nav>
+    </> 
   )
 }
 

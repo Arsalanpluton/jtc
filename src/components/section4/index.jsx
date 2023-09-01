@@ -7,7 +7,7 @@ import './section4.scss'
 function Section4() {
 
     function valuetext(value) {
-        return `${value}°C`;
+        return `${value}`;
       }
       
   return (

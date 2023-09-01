@@ -1,19 +1,24 @@
-.slider-container {
+.sec1-slider-container {
     width: 100%;
     margin: 50px auto;
     position: relative;
   }
   
-  .card {
+  .sec1-card {
     width: 260px;
     height: 100px;
     background-color: #000000;
     color: #fff;
     border-radius: 20px;
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     padding: 10px;
+
+    .sec1-card-img{
+      display: flex;
+      align-items: center;
+    }
 
     img{
         width: 48px;
@@ -21,12 +26,13 @@
         margin-right: 5px;
     }
 
-    .card-content{
+    .sec1-card-content{
         // width;
         margin-left: 5px;
         p{
             font-size: 16px;   
             font-weight: 300;
+            margin-bottom: 2px;
             span{
                 font-weight: 700;
             }
@@ -36,7 +42,7 @@
     .cards-space{
         display: flex;
         justify-content: space-between;
-        margin-top: 5px;
+        // margin-top: 5px;
         .price{
             font-size: 12px;
             font-weight: 700px;

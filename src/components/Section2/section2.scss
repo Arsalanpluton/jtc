@@ -1,6 +1,6 @@
 .sec2-container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     position: relative;
     top: -20px;
@@ -19,7 +19,7 @@
             color: #E11F1C;
         }
     }
-    sec2-p{
+    .sec2-p{
         font-family: Poppins;
         font-size: 30px;
         font-weight: 500;
@@ -28,15 +28,28 @@
         text-align: center;
     }
 }
+.lp-phone-outer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .lp-phone-img-wrapper {
     aspect-ratio: 5/11;
     position: relative;
-    width: 50%;
+    // width: 100%;
+    width: 280px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
 }
 .lp-shop-crop {
     height: 100%;
     width: 100%;
+    // width: 280px;
+    // height: 500px;
 }
 
 .stat-box {
@@ -67,3 +80,67 @@
     -webkit-transform: translateX(65%);
     transform: translateX(65%);
 }
+
+@media screen and (max-width: 767px){
+    .sec2-container{
+        top: 0;
+        border-radius: 0px;
+        min-height: calc(max-content + 10px) !important;
+
+        .sec2-h2{
+            margin-top: 50px;
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+    
+            span{
+                color: #E11F1C;
+            }
+        }
+        
+        .sec2-p{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 20px;
+            width: 70%;
+            letter-spacing: 0em;
+            
+        }
+    }
+    .lp-phone-outer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .lp-phone-img-wrapper {
+        aspect-ratio: 5/11;
+        position: relative;
+        // width: 100%;
+        width: 200px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .lp-shop-crop {
+        height: 100%;
+        width: 100%;
+        // width: 280px;
+        // height: 500px;
+    }
+    
+    
+    .sec2-p-center{
+        display: flex;
+        justify-content: center;
+        // text-align: center;
+    }
+    .br-hidden{
+        display: none;
+    }
+        
+    }

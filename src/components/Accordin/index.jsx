@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import { FaMinus, FaPlus } from 'react-icons/fa'
+import './accordin.scss'
 
-function Questions({title, para}) {
+function Accordin({title, para}) {
     
     const [clicked, setClicked] = useState(false)
   return (
@@ -24,4 +25,4 @@ function Questions({title, para}) {
   )
 }
 
-export default Questions
+export default Accordin

@@ -5,7 +5,8 @@ import CardSlider from '../CardSlider'
 function Section1() {
 
   return (
-    <div className='container'>
+    <div className='section1'>
+      <div className='sec1-wrapper'>
         <div className='main-content'>
             <h1>OWN A <span className='clr-red'>JAVA TIMES <br />CAFFE</span> FRANCHISE</h1>
             <p>Join one of the fastest growing <br /> caffe franchise in the world</p>
@@ -14,6 +15,7 @@ function Section1() {
         <div className='carosal'>
             <CardSlider />
         </div>
+      </div>
     </div>
   )
 }
