@@ -98,23 +98,14 @@ function Section4() {
                 <div className='sec4-currency'>
                     <div className='currency-top'>
                         <h3>Currency:</h3>
-                        <p>MXN</p>
+                        <div className='mxn'>
+                            <p>MXN</p>
+                        </div>
                     </div>
                     <div className='currency-money'>
                         <h3>How much money:</h3>
                         <div className='progressbar'>
                         <Box sx={{ width: 300 }}>
-                            {/* <Slider
-                                aria-label="Temperature"
-                                defaultValue={5000}
-                                getAriaValueText={valuetext}
-                                valueLabelDisplay="auto"
-                                step={10}
-                                marks
-                                min={500}
-                                max={100000}
-                                className='slider'
-                            /> */}
 
                             <Slider
                                 aria-label="Always visible"
@@ -147,7 +138,7 @@ function Section4() {
                         </div>
                         <div className="cta">
                             <Button variant="primary" className="cta" onClick={handleShow}>
-                                Launch demo modal
+                                Java Times Gurantee
                             </Button>
                         </div>
                         <Modal show={show} onHide={handleClose} animation={false}>

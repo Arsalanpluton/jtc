@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import './section9.scss'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
+// import CardMedia from '@mui/material/CardMedia';
+// import Typography from '@mui/material/Typography';
+// import { Button, CardActionArea, CardActions } from '@mui/material';
 import { BsArrowUpRight } from 'react-icons/bs'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -57,8 +59,74 @@ function Section9() {
     <div className='section section9'>
         <h2 data-aos="fade-up" data-aos-once='true'><span>JAVA TIMES</span> Blog</h2>
         <div className="blogs-container">
+            <Card style={{ width: '18rem' }} className='sec9-blog-card'>
+                <Card.Img variant="top" src="/images/main.png" className='sec9-blog-img'/>
+                <Card.Body>
+                    <Card.Title className='sec9-blog-h'>Java Times Caffe: Una Nueva Ol....</Card.Title>
+                    <Card.Text className='sec9-blog-p'>
+                        A medida que la cultura del cafe en Mexico florece, Java Times Caffe, 
+                        una cadena de cafe de origen local, esta adoptando un
+                    </Card.Text>
+                    <div className='sec9-blog-bottom'>
+                        <div className="sec9-blog-left">
+                            <img src="/images/main.png" alt="" />
+                            <div className='sec9-blog-left-text'>
+                                <h4>Antonio Leite</h4>
+                                <p>1 month ago</p>
+                            </div>
+                        </div>
+                        <div className="sec9-blog-right">
+                            <BsArrowUpRight  fontWeight={700} className='sec9-right-icon'/>
+                        </div>
+                    </div>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }} className='sec9-blog-card'>
+                <Card.Img variant="top" src="/images/main.png" className='sec9-blog-img'/>
+                <Card.Body>
+                    <Card.Title className='sec9-blog-h'>Java Times Caffe: Una Nueva Ol....</Card.Title>
+                    <Card.Text className='sec9-blog-p'>
+                        A medida que la cultura del cafe en Mexico florece, Java Times Caffe, 
+                        una cadena de cafe de origen local, esta adoptando un
+                    </Card.Text>
+                    <div className='sec9-blog-bottom'>
+                        <div className="sec9-blog-left">
+                            <img src="/images/main.png" alt="" />
+                            <div className='sec9-blog-left-text'>
+                                <h4>Antonio Leite</h4>
+                                <p>1 month ago</p>
+                            </div>
+                        </div>
+                        <div className="sec9-blog-right">
+                            <BsArrowUpRight  fontWeight={700} className='sec9-right-icon'/>
+                        </div>
+                    </div>
+                </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }} className='sec9-blog-card'>
+                <Card.Img variant="top" src="/images/main.png" className='sec9-blog-img'/>
+                <Card.Body>
+                    <Card.Title className='sec9-blog-h'>Java Times Caffe: Una Nueva Ol....</Card.Title>
+                    <Card.Text className='sec9-blog-p'>
+                        A medida que la cultura del cafe en Mexico florece, Java Times Caffe, 
+                        una cadena de cafe de origen local, esta adoptando un
+                    </Card.Text>
+                    <div className='sec9-blog-bottom'>
+                        <div className="sec9-blog-left">
+                            <img src="/images/main.png" alt="" />
+                            <div className='sec9-blog-left-text'>
+                                <h4>Antonio Leite</h4>
+                                <p>1 month ago</p>
+                            </div>
+                        </div>
+                        <div className="sec9-blog-right">
+                            <BsArrowUpRight  fontWeight={700} className='sec9-right-icon'/>
+                        </div>
+                    </div>
+                </Card.Body>
+            </Card>
         {/* <Slider {...settings}> */}
-            <Card sx={{ maxWidth: 345 }} className='sec9-blog-card' data-aos="fade-up" data-aos-once='true'>
+            {/* <Card sx={{ maxWidth: 345 }} className='sec9-blog-card' data-aos="fade-up" data-aos-once='true'>
                 <CardActionArea className='sec9-card-area'>
                     <CardMedia
                     component="img"
@@ -156,7 +224,7 @@ function Section9() {
                         </div>
                     </div>
                 </CardActions>
-            </Card>
+            </Card> */}
             
         {/* </Slider> */}
         </div>

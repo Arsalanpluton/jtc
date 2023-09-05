@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './section8.scss'
 import { HiOutlineArrowNarrowRight, HiOutlineArrowNarrowLeft } from 'react-icons/hi';
+import { BiSolidQuoteLeft } from 'react-icons/bi'
 
 function Section8() {
 
@@ -77,9 +78,15 @@ function Section8() {
                         <img src="/images/Rectangle 215.png " alt="slider image" />
                     </div>
                     <div className="slider-content">
-                        <div className="icon"></div>
-                        <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
-                        <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                      <div className='comma-top comma display-hidden'>
+                        <img src="/images/vector1.png" alt="quotes" />
+                      </div>
+                      <div className="icon"></div>
+                      <h3>LAURA MONSERRAT FAVELA CONTRERAS</h3>
+                      <p>Being able to trust a project, its people and its ideal is incredible to find, the innovation that supports Java is the definitive decision maker that prompted me to believe in a change in business and how this positively impacts people, super happy with contributing a grain of coffee to this growth.</p>
+                      <div className='comma-bottom comma display-hidden'>
+                        <img src="/images/vector2.png" alt="quotes" />
+                      </div>
                     </div>
                 </div>
                 <div className='sec8-slider slider-container'>

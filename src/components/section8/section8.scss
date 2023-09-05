@@ -9,9 +9,9 @@
 
     h2{
         font-family: Poppins;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 50px;
+        line-height: 2.5rem;
         letter-spacing: 0em;
         text-align: center;
         color: #2B2B2B;
@@ -23,9 +23,10 @@
 
     p{
         font-family: Poppins;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 36px;
+        margin-top: 10px;
+        line-height: 1.5rem;
         letter-spacing: 0em;
         text-align: center;
         color: #2B2B2B;
@@ -62,24 +63,34 @@
             }
 
             .slider-content{
-                // width: 70%;
-                padding: 55px;
+                padding: 30px;
                 width: 100%;
+
+                .comma{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
                 
+                .comma-bottom{
+                    float: right;
+                    margin-right: 30px;
+                }
 
                 h3{
                     font-family: Poppins;
-                    font-size: 24px;
+                    font-size: 20px;
                     font-weight: 700;
-                    line-height: 36px;
+                    line-height: 2rem;
                     letter-spacing: 0em;
                     text-align: left;
                 }
                 p{
                     font-family: Poppins;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 500;
-                    line-height: 27px;
+                    line-height: 20px;
                     letter-spacing: 0em;
                     text-align: left;
                     width: 90%;
@@ -222,6 +233,10 @@
         background-color: transparent;
         border: none;
         // z-index: 1;
+      }
+
+      .display-hidden{
+        display: none;
       }
     
   }

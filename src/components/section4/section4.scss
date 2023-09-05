@@ -29,17 +29,18 @@
         .sec4-left, .sec4-right{
             margin-top: 30px;
             img{
-                width: 170px;
-                height: 60px;
+                width: 130px;
+                margin-bottom: 10px;
+                // height: 60px;
                 // margin: 0 auto;
                 // text-align: center;
                 align-items: center;
             }
             h2{
                 font-family: Poppins;
-                font-size: 35px;
+                font-size: 28px;
                 font-weight: 700;
-                line-height: 40px;
+                line-height: 2rem;
                 letter-spacing: 0em;
                 text-align: left;
                 span{
@@ -50,21 +51,26 @@
 
             p{
                 font-family: Poppins;
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 500;
-                line-height: 36px;
+                line-height: 1rem;
                 letter-spacing: 0em;
             }
 
             button{
-                width: 143px;
-                height: 41px;
+                width: 120px;
+                height: 40px;
                 border-radius: 30px;
                 background-color: #E11F1C;
                 color: white;
                 border: none;
-                margin-top: 20px;
+                // margin-top: 10px;
                 font-size: 16px;
+
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
             }
         }
 
@@ -76,33 +82,38 @@
             flex-wrap: wrap;
 
             .sec4-results, .sec4-currency{
-                width: 350px;
+                width: 320px;
                 // border: 2px solid black;
                 border-radius: 30px;
             }
             .sec4-results{
                 background-color: #F4F4F4;
-                padding: 20px 40px;
+                padding: 10px 20px;
+
                 h3{
                     font-family: Poppins;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 600;
-                    line-height: 33px;
+                    line-height: 22px;
                     letter-spacing: 0em;
                     text-align: left;
-                    margin: 10px 0px;
+                    margin: 10px 0px 5px 0px;
                 }
                 .results{
                     div{
                         display: flex;
                         justify-content: space-between;
-                        height: 25px;
+                        height: 15px;
                         padding: 20px 0px;
                         
                     }
 
                     div:not(:last-child){
                         border-bottom: 1px solid #D8CECE;
+                    }
+
+                    div:last-child{
+                        padding-top: 5px;
                     }
                     p{
                         font-family: Poppins;
@@ -126,11 +137,12 @@
             .sec4-currency{
                 background: linear-gradient(212.53deg, #E11F1C 0.96%, #660E0C 98.4%);
                 color: white;
-                padding: 20px 30px;
+                padding: 10px 20px;
 
                 .currency-top{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
 
                     h3{
                         font-family: Poppins;
@@ -141,24 +153,29 @@
                         text-align: left;
                         margin: 10px 0px;
                     }
-                    p{
-                        margin: 10px 0px;
+                    .mxn{
+                        // margin: 10px 0px;
                         width: 78px;
-                        height: 37px;
+                        height: 28px;
                         border-radius: 10px;
                         background-color: #A10707;
-                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    p{
                         font-size: 18px;
+                        padding-top: 15px;
                     }
                 }
                 .currency-money{
-                    margin-top: 20px;
+                    margin-top: 15px;
 
                     h3{
                         font-family: Poppins;
                         font-size: 18px;
                         font-weight: 500;
-                        line-height: 27px;
+                        line-height: 20px;
                         letter-spacing: 0em;
                         text-align: left;
                         margin-bottom: 20px;
@@ -170,14 +187,18 @@
                     .currency-min-max{
                         display: flex;
                         justify-content: space-between;
+                        h3{
+                            font-size: 18px;
+                        }
                     }
                     .currency-year{
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         div{
-                            width: 110px;
+                            width: 100px;
                             height: 35px;
+                            padding-top: 5px;
                             background-color: #5C0000;
                             border-radius: 10px;
 
@@ -187,7 +208,7 @@
                             font-size: 18px;
                             font-weight: 500;
                             text-align: center;
-                            margin-top: 3px;
+                            // margin-top: 3px;
                         }
 
                     }
@@ -195,7 +216,7 @@
                         display: flex;
                         justify-content: space-between;
                         font-family: Poppins;
-                        margin-top: 20px;
+                        margin-top: 10px;
 
                         p{
                             font-size: 18px;
@@ -232,7 +253,7 @@
                             width: 208px;
                             height: 35px;
                             border-radius: 30px;
-                            border: 2px solid white;
+                            border: 1px solid white;
                             background-color: transparent;
                             font-family: Poppins;
                             font-size: 16px;
@@ -240,6 +261,7 @@
                             line-height: 24px;
                             letter-spacing: 0em;
                             text-align: center;
+                            margin-top: 5px;
                         }
                     }
                 }

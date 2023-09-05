@@ -9,13 +9,13 @@
 
     h2{
         font-family: Poppins;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 50px;
+        line-height: 2.5rem;
         letter-spacing: 0em;
         text-align: center;
         color: #2B2B2B;
-        margin: 50px 0px 20px 0px;
+        margin: 50px 0px 10px 0px;
         span{
             color: #E11F1C;
         }
@@ -23,9 +23,9 @@
 
     p{
         font-family: Poppins;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
-        line-height: 36px;
+        line-height: 1.5rem;
         letter-spacing: 0em;
         text-align: center;
         color: #2B2B2B;
@@ -39,10 +39,10 @@
         overflow: hidden;
 
         .sec6-card{
-            width: 264px;
+            width: 230px;
             // height: 281px;
             padding: 20px;
-            margin: 20px;
+            margin: 10px;
             border-radius: 20px;
             cursor: pointer;
              
@@ -58,7 +58,7 @@
             }
             h4{
                 font-family: Poppins;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 700;
                 line-height: 25px;
                 letter-spacing: 0em;
@@ -137,5 +137,9 @@
                 }
             }
         }
+    }
+
+    .br-hidden{
+        display: none;
     }
 }

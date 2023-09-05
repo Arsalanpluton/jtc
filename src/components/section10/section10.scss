@@ -10,9 +10,9 @@
     h2{
         max-width: 680px;
         font-family: Poppins;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 2.5rem;
         letter-spacing: 0em;
         text-align: center;
 
@@ -25,24 +25,31 @@
         width: 80%;
         margin-top: 10px;
         .sec10-list{
-            border: 3px solid black;
-            border-radius: 25px;
+            border: 2px solid black;
+            border-radius: 16px;
             padding: 0px;
             width: 100%;
+            
             
             .sec10-title{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 15px;
+                padding: 10px;
                 color: #2B2B2B !important;
-                border-radius: 20px;
+                border-radius: 10px;
                 margin: 0px;
                 width: 100%;
+
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
                 .sec10-icon{
                     cursor: pointer;
-                    font-size: 24px;
+                    font-size: 20px;
                     color: red;
                 }
             }
@@ -50,7 +57,7 @@
                 border: 2px solid black;
             }
             .sec10-para{
-                padding: 20px;
+                padding: 10px;
                 color: #2B2B2B !important;
             }
         }
@@ -79,7 +86,7 @@
 
             .sec10-list{
                 border: 2px solid black;
-                border-radius: 12px;
+                border-radius: 16px;
                 padding: 0px;
                 width: 100%;
                 
@@ -110,6 +117,10 @@
                 }
             }
         }
+    }
+
+    .display-hidden{
+        display: hidden;
     }
     
 }

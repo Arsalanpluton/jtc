@@ -10,10 +10,10 @@ function Section6() {
     },[])
 
   return (
-    <div className='section6 section' data-aos="fade-down" data-aos-once='true'>
-        <h2  >What <span>JAVA TIMES <br />CAFFE</span> Give you</h2>
-        <p >
-            We created a system that creates real value for our franchise partners and our customers.
+    <div className='section6 section'>
+        <h2 data-aos="fade-down" data-aos-once='true' >What <span>JAVA TIMES <br />CAFFE</span> Give you</h2>
+        <p data-aos="fade-down" data-aos-once='true'>
+            We created a system that creates real value for our franchise <br className='br-hidden'/> partners and our customers.
         </p>
         <div className="cards-container">
             <div className="sec6-card" >

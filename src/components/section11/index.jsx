@@ -16,7 +16,7 @@ function Section11() {
         <div className='section section11'>
             <div className="sec11-left" data-aos="fade-down" data-aos-once='true'>
                 <h2><span>Contact</span> Us!</h2>
-                <p>Submit The Form Below To Get Started:</p>
+                <p>Submit The Form <br className='display-hiden'/>Below To Get Started:</p>
             </div>
             <div className="sec11-right" data-aos="fade-down" data-aos-once='true'>
                 <form className='sec11-form'>
