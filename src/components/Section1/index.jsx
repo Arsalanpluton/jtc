@@ -35,7 +35,7 @@ function Section1() {
       <div className="message-container">
         <AiFillMessage  className='message-icon'/>
       </div>
-      <div className='sec1-form'>
+      <div className='sec1-form display-hidden'>
         <div className='form-letters' onClick={()=> setActiveForm(!activeForm)}>
           <p>F</p>
           <p>O</p>
