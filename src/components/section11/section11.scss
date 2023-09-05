@@ -72,6 +72,13 @@
                         border-radius: 10px;
                         padding: 10px;
                         font-size: 18px;
+                        border: none;
+                        background-color: #F3F3F3;
+
+                        &:focus{
+                            outline: none;
+                            border: none;
+                        }
                     }
 
                     .textarea{
@@ -140,7 +147,12 @@
     height: 100px;
     border-radius: 10px;
     padding: 10px;
-    
+    border: none;
+    background-color: #F3F3F3;
+    &:focus{
+        outline: none;
+        border: none;
+    }
     
 }
 
