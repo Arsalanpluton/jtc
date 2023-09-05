@@ -1,7 +1,9 @@
 .sec1-slider-container {
     width: 100%;
-    margin: 50px auto;
+    min-height: 102px;
+    margin: 30px auto;
     position: relative;
+    justify-self: flex-end;
   }
   
   .sec1-card {
@@ -11,26 +13,29 @@
     color: #fff;
     border-radius: 20px;
     display: flex !important;
-    // align-items: center;
-    // justify-content: center;
-    padding: 10px;
+    align-items: center;
+    // justify-content: ;
+    padding: 10px 20px;
 
     .sec1-card-img{
       display: flex;
       align-items: center;
+      margin: 0px 10px;
     }
 
     img{
         width: 48px;
         height: 48px;
-        margin-right: 5px;
+        // margin-right: 5px;
+        // padding: 20px;
     }
 
     .sec1-card-content{
         // width;
         margin-left: 5px;
         p{
-            font-size: 16px;   
+            font-size: 18px; 
+            // letter-spacing: 0.10rem;  
             font-weight: 300;
             margin-bottom: 2px;
             span{

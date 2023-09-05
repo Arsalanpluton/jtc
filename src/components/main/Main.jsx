@@ -13,7 +13,7 @@ import Section11 from '../section11'
 
 const Main = () => {
   return (
-       <main>
+       <>
         <Section1 />
         <Section2 />
         <Section3 />
@@ -25,7 +25,7 @@ const Main = () => {
         <Section9 />
         <Section10 />
         <Section11 />
-      </main>
+      </>
   )
 }
 

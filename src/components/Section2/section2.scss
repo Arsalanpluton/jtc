@@ -3,17 +3,17 @@
     min-height: 100vh;
     background-color: white;
     position: relative;
-    top: -20px;
     border-radius: 20px;
     z-index: 1;
     text-align: center;
+    left: 0px;
 
     .sec2-h2{
         margin-top: 50px;
         font-family: Poppins;
         font-size: 40px;
         font-weight: 700;
-        line-height: 60px;
+        line-height: 50px;
 
         span{
             color: #E11F1C;
@@ -121,7 +121,7 @@
         position: relative;
         // width: 100%;
         width: 200px;
-        height: 300px;
+        height: 470px;
         display: flex;
         justify-content: center;
     
@@ -144,3 +144,5 @@
     }
         
     }
+
+

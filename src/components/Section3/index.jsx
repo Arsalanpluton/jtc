@@ -1,20 +1,49 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 import './section3.scss'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 function Section3() {
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  // Function to toggle video playback
+  const togglePlay = () => {
+    if (videoRef.current.paused || videoRef.current.ended) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  // Add a listener for the video's "ended" event to reset the button text
+  const handleVideoEnded = () => {
+    setIsPlaying(false);
+  };
+
+  useEffect(()=>{
+    Aos.init({duration: 1000})
+  },[])
+
   return (
     <div className='section3'>
         <div className='row'>
             <div className='sec3-left'>
-                <h2>What our <span>Franchise</span><br /> Owner Say</h2>
-                <p>Help build a healthier community while <br /> building yourself a healthier bank <br />account!</p>
-                <button>contact us</button>
+                <h2 data-aos="fade-right" data-aos-once='true'>What our <span>Franchise</span><br /> Owner Say</h2>
+                <p data-aos="fade-right" data-aos-once='true'>Help build a healthier community while <br /> building yourself a healthier bank <br />account!</p>
+                <button>Contact us</button>
             </div>
-            <div className='sec3-right'>
-            <iframe className='sec3-video' width="600" height="350" src="https://www.youtube.com/embed/vIsHv6nTTSU?si=zH3faoEftUSrL0Kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className='sec3-right' data-aos="fade-left" data-aos-once='true'>
+            <video
+              ref={videoRef}
+              src="/videos/testimonialvideo1.mp4"
+              loop
+              onEnded={handleVideoEnded}
+              onClick={togglePlay}
+            ></video>
             </div>
         </div>
         

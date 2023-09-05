@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: white;
 
     .row{
         display: flex;
@@ -22,9 +24,10 @@
         .sec4-right{
             // border: 2px solid black;
             max-width: 70%;
-            min-width: 600px;
+            // min-width: 600px;
         }
         .sec4-left, .sec4-right{
+            margin-top: 30px;
             img{
                 width: 170px;
                 height: 60px;
@@ -252,26 +255,17 @@
         min-height: auto !important;
     
         .row{
-            // display: flex;
-            // justify-content: space-evenly;
-            // flex-wrap: wrap;
-            // align-items: center;
-            // height: 100%;
-
             margin: 30px;
             text-align: center;
-            // justify-content: center;
     
             .sec4-left{
-                // border: 2px solid black;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
             .sec4-right{
-                // border: 2px solid black;
                 max-width: 70%;
-                min-width: 600px;
+                // min-width: 600px;
             }
             .sec4-left, .sec4-right{
                 img{
@@ -301,12 +295,14 @@
             .sec4-right{
     
                 .sec4-results, .sec4-currency{
-                    width: 350px;
+                    width: 100%;
                     // border: 2px solid black;
                     border-radius: 30px;
                 }
                 .sec4-results{
                     padding: 20px 20px;
+                    width: 100%;
+
                     h3{
                         font-size: 18px;
                         font-weight: 500;
@@ -327,7 +323,7 @@
                     }
                 }
                 .sec4-currency{
-
+                    width: 100%;
                     .currency-top{
     
                         h3{
@@ -417,12 +413,13 @@
                         }
     
                         .cta{
+                            width: 100%;
                             display: flex;
                             justify-content: center;
     
                             button{
-                                width: 208px;
-                                height: 35px;
+                                // width: 208px;
+                                // height: 35px;
                                 border-radius: 30px;
                                 border: 2px solid white;
                                 background-color: transparent;
@@ -432,6 +429,10 @@
                                 line-height: 24px;
                                 letter-spacing: 0em;
                                 text-align: center;
+
+                                &:focus{
+                                    outline: none;
+                                }
                             }
                         }
                     }
@@ -440,4 +441,23 @@
             
         }
     }
+}
+
+
+.para-row{
+    margin-bottom: 10px;
+}
+
+.modal-header button{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    // color: black;
+    // background-color: black;
+}
+
+.modal-header button:focus{
+    border: none;
+    outline: none;
 }

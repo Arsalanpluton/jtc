@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: 500px;
-    // position: relative;
+    z-index: 2;
+    position: relative;
 
     .row{
         display: flex;
@@ -62,6 +62,12 @@
                 
             }
         }
+
+        .sec3-right video{
+            width: 685px;
+            height: 400px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -75,7 +81,7 @@
     
             .sec3-left, .sec3-right{
                 max-width: 100%;
-                min-width: 400px;
+                min-width: 100%;
                 margin-top: 30px;
                 text-align: center;
                 // border: 2px solid white;
@@ -122,6 +128,12 @@
 
                 margin: 20px 0px;
             }
+        }
+
+        .sec3-right video{
+            width: 90% !important;
+            height: 320px !important;
+            cursor: pointer;
         }
     }
     

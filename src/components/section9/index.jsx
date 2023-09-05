@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './section9.scss'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -11,6 +13,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function Section9() {
+
+    useEffect(()=>{
+        Aos.init({duration: 1000})
+    },[])
 
     var settings = {
         dots: false,
@@ -49,10 +55,10 @@ function Section9() {
 
   return (
     <div className='section section9'>
-        <h2><span>JAVA TIMES</span> Blog</h2>
+        <h2 data-aos="fade-up" data-aos-once='true'><span>JAVA TIMES</span> Blog</h2>
         <div className="blogs-container">
         {/* <Slider {...settings}> */}
-            <Card sx={{ maxWidth: 345 }} className='sec9-blog-card'>
+            <Card sx={{ maxWidth: 345 }} className='sec9-blog-card' data-aos="fade-up" data-aos-once='true'>
                 <CardActionArea className='sec9-card-area'>
                     <CardMedia
                     component="img"
@@ -85,7 +91,7 @@ function Section9() {
                     </div>
                 </CardActions>
             </Card>
-            <Card sx={{ maxWidth: 345}} className='sec9-blog-card'>
+            <Card sx={{ maxWidth: 345}} className='sec9-blog-card' data-aos="fade-down" data-aos-once='true'>
                 <CardActionArea className='sec9-card-area'>
                     <CardMedia
                     component="img"
@@ -118,7 +124,7 @@ function Section9() {
                     </div>
                 </CardActions>
             </Card>
-            <Card sx={{ maxWidth: 345 }} className='sec9-blog-card'>
+            <Card sx={{ maxWidth: 345 }} className='sec9-blog-card' data-aos="fade-up" data-aos-once='true'>
                 <CardActionArea className='sec9-card-area'>
                     <CardMedia
                     component="img"

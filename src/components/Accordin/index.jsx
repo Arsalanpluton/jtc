@@ -6,16 +6,16 @@ function Accordin({title, para}) {
     
     const [clicked, setClicked] = useState(false)
   return (
-    <div className="sec10-container">
-        <div className="sec10-list">
-            <div className={clicked?"sec10-title sec10-title-b" : "sec10-title"} >
+    <div className="accordin-container">
+        <div className="accordin-list">
+            <div className={clicked?"accordin-title accordin-title-b" : "accordin-title"} >
                 <h3>{title}</h3>
                 {clicked ? 
-                <FaMinus onClick={()=>setClicked(!clicked)} className='sec10-icon'/>
-                :<FaPlus onClick={()=>setClicked(!clicked)} className='sec10-icon'/>}
+                <FaMinus onClick={()=>setClicked(!clicked)} className='accordin-icon'/>
+                :<FaPlus onClick={()=>setClicked(!clicked)} className='accordin-icon'/>}
             </div>
             {clicked ?
-                    <div className="sec10-para">
+                    <div className="accordin-para">
                     <p>{para}</p>
                 </div>  : ''
             }

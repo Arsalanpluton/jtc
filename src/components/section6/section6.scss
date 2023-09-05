@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: max-content;
+    min-height: 100vh;
+    position: relative;
+    background-color: white;
 
     h2{
         font-family: Poppins;
@@ -38,11 +40,16 @@
 
         .sec6-card{
             width: 264px;
-            height: 281px;
+            // height: 281px;
             padding: 20px;
-            margin-top: 20px;
+            margin: 20px;
+            border-radius: 20px;
             cursor: pointer;
              
+            &:hover{
+                box-shadow: 15px 15px 15px 0px #00000026;
+                // scale: 1.5;
+            }
             
             img{
                 width: 52;
@@ -87,7 +94,7 @@
             font-size: 20px;
             font-weight: 300;
             line-height: 20px;
-            width: 400px;
+            width: 100%;
         }
     
         .cards-container{
@@ -101,6 +108,7 @@
                 height: 200px;
                 padding: 10px;
                 margin-top: 10px;
+
                 
                 img{
                     width: 52;

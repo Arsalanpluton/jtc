@@ -62,7 +62,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -74,7 +74,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -86,7 +86,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -98,7 +98,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -110,7 +110,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -122,7 +122,7 @@ const CardSlider = () => {
             </div>
         </div>
         <div className='sec1-card'>
-            <div>
+            <div className='sec1-card-img'>
                 <img src="/images/profile-img.png" alt="profile photo" />
             </div>
             <div className='sec1-card-content'>
@@ -133,8 +133,30 @@ const CardSlider = () => {
                 </div>
             </div>
         </div>
-        
-        {/* Add more cards as needed */}
+        <div className='sec1-card'>
+            <div className='sec1-card-img'>
+                <img src="/images/profile-img.png" alt="profile photo" />
+            </div>
+            <div className='sec1-card-content'>
+                <p>John Doe Invested <br />in<span> Java times caffe</span></p>
+                <div className='cards-space'>
+                    <p className="price">$220 MXN</p>
+                    <p className="days">2 Days ago</p>
+                </div>
+            </div>
+        </div>
+        <div className='sec1-card'>
+            <div className='sec1-card-img'>
+                <img src="/images/profile-img.png" alt="profile photo" />
+            </div>
+            <div className='sec1-card-content'>
+                <p>John Doe Invested <br />in<span> Java times caffe</span></p>
+                <div className='cards-space'>
+                    <p className="price">$220 MXN</p>
+                    <p className="days">2 Days ago</p>
+                </div>
+            </div>
+        </div>
       </Slider>
     </div>
   );

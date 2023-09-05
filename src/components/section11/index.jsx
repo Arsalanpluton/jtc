@@ -1,15 +1,24 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import './section11.scss'
 
 function Section11() {
+
     const [tab, setTab] = useState(0)
+
+    useEffect(()=>{
+        Aos.init({duration: 1000})
+    },[])
+
+
     return (
         <div className='section section11'>
-            <div className="sec11-left">
+            <div className="sec11-left" data-aos="fade-down" data-aos-once='true'>
                 <h2><span>Contact</span> Us!</h2>
                 <p>Submit The Form Below To Get Started:</p>
             </div>
-            <div className="sec11-right">
+            <div className="sec11-right" data-aos="fade-down" data-aos-once='true'>
                 <form className='sec11-form'>
                     <div className='sec11-form-align'>
                         <div className='input'>
@@ -24,9 +33,9 @@ function Section11() {
                     <div className='sec11-form-align'>
                         <div className='input'>
                             <label htmlFor="phone">Phone</label><br />
-                            <input type="Number" placeholder='+92' />
+                            <input type="Number" placeholder='+52' />
                         </div>
-                        <div className='input'>
+                        <div className='input input-gap'>
                             <label htmlFor="type">Type</label><br />
                             <div className="input-flex">
                                 <div
@@ -45,9 +54,9 @@ function Section11() {
                         </div>
                     </div>
                     <div className='sec11-form-align'>
-                        <div className='input'>
+                        <div className='input-text'>
                             <label htmlFor="message">Message</label><br />
-                            <textarea type="text" placeholder='Message' />
+                            <input className='textarea' type="text" placeholder='Message' />
                         </div>
                     </div>
                     <button type='submit'>SUBMIT</button>

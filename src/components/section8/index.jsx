@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -18,6 +20,10 @@ function Section8() {
           <HiOutlineArrowNarrowRight  fontSize={100}/>
         </button>
       );
+
+      useEffect(()=>{
+        Aos.init({duration: 1000})
+      },[])
 
     var settings = {
         dots: false,
@@ -59,12 +65,12 @@ function Section8() {
 
   return (
     <div className='section section8'>
-        <h2>Our  <span>INVESTORS</span></h2>
-        <p>
+        <h2 data-aos="fade-down">Our  <span>INVESTORS</span></h2>
+        <p data-aos="fade-down">
             Willing to take risks to win with us!
         </p>
 
-        <div className='slider'>
+        <div className='slider' data-aos="fade-up" data-aos-once='true'>
             <Slider {...settings}>
                 <div className='sec8-slider'>
                     <div className="slider-image">
