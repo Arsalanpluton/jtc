@@ -1,6 +1,6 @@
 .section3{
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     background: url('../../../public/images/Rectangle172.png');
     background-size: cover;
     background-position: center;
@@ -10,6 +10,7 @@
     align-items: center;
     z-index: 2;
     position: relative;
+    // padding: 5rem 0px;
 
     .row{
         display: flex;

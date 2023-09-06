@@ -4,7 +4,8 @@
     text-align: center;
     position: relative;
     background-color: white;
-    padding-bottom: 30px;
+    padding: 5rem 0px 0px 0px;
+
     h2{
         font-family: Poppins;
         font-size: 36px;
@@ -133,6 +134,11 @@
 
 }
 @media screen and (max-width: 767px){
+
+    .section9{
+        padding-bottom: 30px;
+    }
+
     .blogs-container{
         width: 100%;
     }
