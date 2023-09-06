@@ -32,11 +32,11 @@ function Section3() {
     <div className='section3'>
         <div className='row'>
             <div className='sec3-left'>
-                <h2 data-aos="fade-right" data-aos-once='true'>What our <span>Franchise</span><br /> Owner Say</h2>
-                <p data-aos="fade-right" data-aos-once='true'>Help build a healthier community while <br /> building yourself a healthier bank <br />account!</p>
+                <h2 data-aos="fade-down" data-aos-once='true'>What our <span>Franchise</span><br /> Owner Say</h2>
+                <p data-aos="fade-down" data-aos-once='true'>Help build a healthier community while <br /> building yourself a healthier bank <br />account!</p>
                 <button>Contact us</button>
             </div>
-            <div className='sec3-right' data-aos="fade-left" data-aos-once='true'>
+            <div className='sec3-right' data-aos="fade-down" data-aos-once='true'>
             <video
               ref={videoRef}
               src="/videos/testimonialvideo1.mp4"

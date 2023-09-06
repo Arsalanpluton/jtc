@@ -13,8 +13,8 @@ function Section5() {
           <img src="/images/img1.png" alt="" />
           {/* <SliderStatic /> */}
         </div>
-        <div className="sec5-right" data-aos="fade-left" data-aos-once='true'>
-            <div className='sec5-right-con'>
+        <div className="sec5-right">
+            <div className='sec5-right-con' data-aos="fade-up" data-aos-once='true'>
               <h3>
                 A{" "}
                 <span>
@@ -26,7 +26,7 @@ function Section5() {
               <button >Contact us</button>
             </div>
         
-            <div className='sec5-right-con'>
+            <div className='sec5-right-con' data-aos="fade-up" data-aos-once='true'>
               <h3>
                 A{" "}
                 <span>

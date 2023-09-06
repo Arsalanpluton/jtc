@@ -6,6 +6,10 @@ import Accodin from '../Accordin/index'
 
 function Section7() {
 
+  const [show, setShow] = useState(false)
+  const [list, setList] = useState([])
+
+
   useEffect(()=>{
     Aos.init({duration: 1000})
   },[])
@@ -14,10 +18,10 @@ function Section7() {
   return (
     <div className='section section7'>
       <div className='row'>
-        <div className="sec7-left col-lg-3 col-sm-12" data-aos="fade-left" data-aos-once='true'>
-          <ul class="sec7-left-ul">
-            <li class="active">Pitch+</li>
-            <ul class="open-header-sub-menu">
+        <div className="sec7-left col-lg-3 col-sm-12" >
+          <ul class="sec7-left-ul" data-aos="fade-down" data-aos-once='true'>
+            <li class="active" onClick={()=> setShow(!show)}>Pitch+</li>
+            <ul class={`${show ? 'open-header-sub-menu': 'display-hidden'}`}>
               <li class="active">PROBLEM</li>
               <li>SOLUTION</li>
               <li>CUSTOMERS</li>

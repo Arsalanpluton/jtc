@@ -4,6 +4,7 @@
     text-align: center;
     position: relative;
     background-color: white;
+    padding-bottom: 30px;
     h2{
         font-family: Poppins;
         font-size: 36px;
@@ -29,7 +30,7 @@
 
         .sec9-blog-card{
             border-radius: 20px;
-            width: 250px !important;
+            width: 350px !important;
             
             .sec9-blog-img{
                 width: 100% !important;
@@ -39,7 +40,7 @@
 
             .sec9-blog-h{
                 font-family: Poppins;
-                font-size: 14px !important;
+                font-size: 16px !important;
                 font-weight: 700;
                 // line-height: 33px;
                 letter-spacing: 0em;
@@ -68,11 +69,16 @@
                             font-weight: 500;
                             margin: 0px 10px;
                         }
+                        p{
+                            font-size: 12px;
+                            margin: 0px 10px;
+                            text-align: left;
+                        }
                     }
 
                     img{
-                        width: 30px;
-                        height: 30px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: 50%;
                     }
                 }
