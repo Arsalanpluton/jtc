@@ -3,10 +3,12 @@
     width: 100%;
     min-height: 200vh;
     height: max-content;
+    z-index: 5;
 
     .sec5-left, .sec5-right{
         width: 50%;
         min-width: 400px;
+        z-index: 4;
     }
 
     .sec5-left{
