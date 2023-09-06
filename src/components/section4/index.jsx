@@ -91,7 +91,7 @@ function Section4() {
                             <p className='count'>$4100</p>
                         </div>
                         <div className='para'>
-                            <p>No hidden charges in our service and no extra charge for our great services, Enjoy from the first day</p>
+                            <p>No hidden charges in our service and no extra charge for our great services</p>
                         </div>
                     </div>
                 </div>
