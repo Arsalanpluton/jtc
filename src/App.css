@@ -66,7 +66,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em;
+  padding: 0.5rem !important;
   position: absolute;
 }
 
@@ -97,12 +97,16 @@ button:hover{
 
 .stat-box-header{
   width: 90px;
-  /* height: 100px; */
+  /* height: 90px !important; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  text-align: left;
+  text-align: left !important;
+}
+
+.stat-box-header p{
+  margin-bottom: 3px;
 }
 
 .stat-box-header img{
