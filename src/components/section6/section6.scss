@@ -37,7 +37,7 @@
     .cards-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        padding: 20px;
         overflow: hidden;
 
         .sec6-card{
@@ -45,12 +45,12 @@
             // height: 281px;
             padding: 20px;
             margin: 10px;
-            border-radius: 20px;
+            border-radius: 5px;
             cursor: pointer;
+    
              
             &:hover{
                 box-shadow: 15px 15px 15px 0px #00000026;
-                // scale: 1.5;
             }
             
             img{
@@ -79,7 +79,17 @@
                 margin-top: 10px;
             }
         }
+        .sec6-card:hover::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%; /* Adjust this value to control the width of the half-border */
+            height: 2px; /* Adjust this value to control the thickness of the half-border */
+            background-color: #E11F1C;
+        }
     }
+    
 }
 
 @media screen and (max-width: 767px){

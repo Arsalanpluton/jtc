@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import './style.scss'; // Import your component's CSS
-import VideoBackground from './VideoBackground'; // Import the VideoBackground component
+import './style.scss'; 
+import VideoBackground from './VideoBackground'; 
 import CardSlider from '../CardSlider';
 import { AiFillMessage } from 'react-icons/ai';
 

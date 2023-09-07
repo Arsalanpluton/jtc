@@ -56,7 +56,7 @@ function Section11() {
                     <div className='sec11-form-align'>
                         <div className='input-text'>
                             <label htmlFor="message">Message</label><br />
-                            <input className='textarea' type="text" placeholder='Message' />
+                            <textarea className='textarea' type="text" placeholder='Message' />
                         </div>
                     </div>
                     <button type='submit'>SUBMIT</button>

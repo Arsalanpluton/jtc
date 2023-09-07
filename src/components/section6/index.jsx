@@ -16,7 +16,7 @@ function Section6() {
             We created a system that creates real value for our franchise <br className='br-hidden'/> partners and our customers.
         </p>
         <div className="cards-container">
-            <div className="sec6-card" >
+            <div className="sec6-card" data-aos="fade-up" data-aos-once='true'>
                 <img src="/images/relatively.png" alt="relatively" />
                 <h4>RELATIVELY LOW OPERATING COSTS</h4>
                 <p>Small retail footprint, and low food and labor costs.</p>
