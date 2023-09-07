@@ -35,20 +35,20 @@ function Section1() {
       <div className="message-container">
         <AiFillMessage  className='message-icon'/>
       </div>
-      <div className='sec1-form sec1-display-hidden'>
+      <div className={`sec1-form ${activeForm ? "sec1-form-active": ""} sec1-display-hidden`}>
         <div className='form-letters' onClick={()=> setActiveForm(!activeForm)}>
           <p>F</p>
           <p>O</p>
           <p>R</p>
           <p>M</p>
         </div>
-        <form action="#" className={`${activeForm ? "form-show" : "form-hidden"}`}>
+        <form action="#" className={`form-style ${activeForm ? "form-hidden" : ""}`}>
           <label htmlFor="name">Name</label>
           <input type="text" placeholder='Name'/>
           <label htmlFor="email">Email</label>
           <input type="email" placeholder='Email'/>
           <label htmlFor="number">Phone</label>
-          <input type="number" placeholder='+52'/>
+          <input type="tel" placeholder='+52'/>
           <button type='submit'>submit</button>
         </form>
       </div>

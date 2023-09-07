@@ -3,6 +3,7 @@
     // top: 70px;
     width: 100%;
     // height: 100vh;
+    overflow: hidden;
   }
   
   /* Video background styles */
@@ -132,12 +133,15 @@
 
   .sec1-form{
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 30%;
     z-index: 2;
     align-items: center;
     transition: 2s;
+    transform: translateX(500px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 6;
 
     .form-letters{
         background-color: #E11F1C;
@@ -154,14 +158,10 @@
         }
     }
 
-    .form-hidden{
-        display: none;
-    }
-    .form-show{
+    .form-style{
         display: flex;
         flex-direction: column;
         width: 500px;
-        // height: 300px;
         padding: 20px;
         border-radius: 20px 0px 0px 20px;
         background-color: rgba(0, 0, 0, 0.63);
@@ -204,6 +204,10 @@
         }
     }
   }
+
+  .sec1-form-active{
+    transform: translateX(0);
+  }
   
   @media screen and (max-width: 767px) {
     .section1 {
@@ -234,21 +238,20 @@
     }
 
     .carosal {
-        width: 70%;
-        height: 20%;
-        display: flex;
-        justify-self: flex-end;
-        gap: 20px;
-        font-size: 20px;
-      }
-    
-
-    .message-container{
-        display: none;
+      width: 70%;
+      height: 20%;
+      display: flex;
+      justify-self: flex-end;
+      gap: 20px;
+      font-size: 20px;
     }
-    .sec1-display-hidden{
+    
+    .message-container{
       display: none;
     }
 
+    .sec1-display-hidden{
+      display: none;
+    }
 
   }
